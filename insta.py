@@ -454,7 +454,7 @@ class InstaScript:
                             Instagram_Spam_Bot.victim_profile()
                             Instagram_Spam_Bot.spamming()
                     elif self.STSPAM == 10:
-                        print(colored(" X> The account is disable to report try again or change to another ac.", 'red))
+                        print(colored(" X> The account is disable to report try again or change to another ac.", 'red'))
                         break
 
                     else:

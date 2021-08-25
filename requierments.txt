@@ -3,3 +3,8 @@ requests
 pyautogui
 selenium
 
+# and download Selenium.Firefox.WebDriver 
+# package mng ;-
+Install-Package Selenium.Firefox.WebDriver -Version 0.27.0
+
+https://github.com/mozilla/geckodriver/releases/tag/v0.27.0

@@ -1,5 +1,0 @@
-1626938047265	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerrSjEd"
-1626938053667	Marionette	INFO	Listening on port 42445
-1626938053740	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: , line 0: uncaught exception: Object
-1626938177365	Marionette	INFO	Stopped listening on port 42445

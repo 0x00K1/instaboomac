@@ -1,7 +1,4 @@
 # script.py
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from time import sleep
 import jokes
 
 # // KUN SOURCE //
@@ -87,233 +84,11 @@ TPALL = '''
     +----------------------------+--------+
 '''
 print(TPALL)
-while True:
-    try:
-        TP = int(input("   [↑]What type of spam --> "))
-        if TP == 1:
-            print("\n")
-            TYP = Type_SPAM["SPAM"]
-            pms = "/html/body/div[5]/div/div/div/div/div/div/div[2]/button"
-            smp = "/html/body/div[1]/section/main/div/header/div/div/span"
-            sps = "/html/body/div[1]/section/main/div/header/div/div/span"
-            while True:
-                try:
-                    print("       ⇊[ " + victim_username + " ]⇊")
-                    pac = input("[?]PRIVATE ACCOUNT[YES/NO] --> ")
-                    if pac == "YES" or pac == 'Yes' or pac == 'yes' or pac == 'yEs' or pac == 'yeS' or pac == 'y' or pac == 'Y':
-                        smp = "/html/body/div[1]/section/main"
-                        sps = "/html/body/div[1]/section/main"
-                        break
-                    elif pac == "NO" or pac == "No" or pac == 'no' or pac == "nO" or pac == 'N' or pac == 'n':
-                        smp = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        sps = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        break
-                    else:
-                        print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                        print("_________________________________________________________")
-                        continue
-                except:
-                    print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                    print("_________________________________________________________")
-                    continue
-            break
-        elif TP == 2:
-            print("\n")
-            TYP = Type_SPAM["self-injury"]
-            pms = "/html/body/div[5]/div/div/div/div[2]/div/div/button"
-            smp = "/html/body/div[5]/div/div/div/div/div/div/div[4]/button"
-            sps = "/html/body/div[1]/section/main"
-            while True:
-                try:
-                    print("       ⇊[ " + victim_username + " ]⇊")
-                    pac = input("[?]PRIVATE ACCOUNT[YES/NO] --> ")
-                    if pac == "YES" or pac == 'Yes' or pac == 'yes' or pac == 'yEs' or pac == 'yeS' or pac == 'y' or pac == 'Y':
-                        sps = "/html/body/div[1]/section/main"
-                        break
-                    elif pac == "NO" or pac == "No" or pac == 'no' or pac == "nO" or pac == 'N' or pac == 'n':
-                        sps = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        break
-                    else:
-                        print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                        print("_________________________________________________________")
-                        continue
-                except:
-                    print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                    print("_________________________________________________________")
-                    continue
-            break
-        elif TP == 3:
-            print("\n")
-            TYP = Type_SPAM["sale something bad"]
-            pms = "/html/body/div[5]/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div"
-            smp = "/html/body/div[5]/div/div/div/div[2]/div/div/div/div[6]/button"
-            sps = "/html/body/div[5]/div/div/div/div/div/div/div[4]/button"
-            break
-        elif TP == 4:
-            print("\n")
-            TYP = Type_SPAM["sex"]
-            pms = "/html/body/div[5]/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div"
-            smp = "/html/body/div[5]/div/div/div/div[2]/div/div/div/div[6]/button"
-            sps = "/html/body/div[5]/div/div/div/div/div/div/div[4]/button"
-            break
-        elif TP == 5:
-            print("\n")
-            TYP = Type_SPAM["violence"]
-            pms = "/html/body/div[5]/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div"
-            smp = "/html/body/div[5]/div/div/div/div[2]/div/div/div/div[6]/button"
-            sps = "/html/body/div[5]/div/div/div/div/div/div/div[4]/button"
-            break
-        elif TP == 6:
-            print("\n")
-            TYP = Type_SPAM["hate"]
-            pms = "/html/body/div[5]/div/div/div/div[2]/div/div/button"
-            smp = "/html/body/div[5]/div/div/div/div/div/div/div[4]/button"
-            sps = "/html/body/div[1]/section/main"
-            while True:
-                try:
-                    print("       ⇊[ " + victim_username + " ]⇊")
-                    pac = input("[?]PRIVATE ACCOUNT[YES/NO] --> ")
-                    if pac == "YES" or pac == 'Yes' or pac == 'yes' or pac == 'yEs' or pac == 'yeS' or pac == 'y' or pac == 'Y':
-                        sps = "/html/body/div[1]/section/main"
-                        break
-                    elif pac == "NO" or pac == "No" or pac == 'no' or pac == "nO" or pac == 'N' or pac == 'n':
-                        sps = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        break
-                    else:
-                        print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                        print("_________________________________________________________")
-                        continue
-                except:
-                    print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                    print("_________________________________________________________")
-                    continue
-            break
-        elif TP == 7:
-            print("\n")
-            TYP = Type_SPAM["bullying and harassment"]
-            pms = "/html/body/div[5]/div/div/div/div[2]/div/div/div/div[3]/button[1]"
-            smp = "/html/body/div[5]/div/div/div/div[2]/div/div/button"
-            sps = "/html/body/div[5]/div/div/div/div/div/div/div[4]/button"
-            break
-        elif TP == 8:
-            print("\n")
-            TYP = Type_SPAM["scam or fraud"]
-            pms = "/html/body/div[5]/div/div/div/div/div/div/div[2]/button"
-            smp = "/html/body/div[1]/section/main"
-            sps = "/html/body/div[1]/section/main"
-            while True:
-                try:
-                    print("       ⇊[ " + victim_username + " ]⇊")
-                    pac = input("[?]PRIVATE ACCOUNT[YES/NO] --> ")
-                    if pac == "YES" or pac == 'Yes' or pac == 'yes' or pac == 'yEs' or pac == 'yeS' or pac == 'y' or pac == 'Y':
-                        smp = "/html/body/div[1]/section/main"
-                        sps = "/html/body/div[1]/section/main"
-                        break
-                    elif pac == "NO" or pac == "No" or pac == 'no' or pac == "nO" or pac == 'N' or pac == 'n':
-                        smp = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        sps = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        break
-                    else:
-                        print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                        print("_________________________________________________________")
-                        continue
-                except:
-                    print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                    print("_________________________________________________________")
-                    continue
-            break
-        elif TP == 9:
-            print("\n")
-            TYP = Type_SPAM["False info"]
-            pms = "/html/body/div[5]/div/div/div/div/div/div/div[2]/button"
-            smp = "/html/body/div[1]/section/main"
-            sps = "/html/body/div[1]/section/main"
-            while True:
-                try:
-                    print("       ⇊[ " + victim_username + " ]⇊")
-                    pac = input("[?]PRIVATE ACCOUNT[YES/NO] --> ")
-                    if pac == "YES" or pac == 'Yes' or pac == 'yes' or pac == 'yEs' or pac == 'yeS' or pac == 'y' or pac == 'Y':
-                        smp = "/html/body/div[1]/section/main"
-                        sps = "/html/body/div[1]/section/main"
-                        break
-                    elif pac == "NO" or pac == "No" or pac == 'no' or pac == "nO" or pac == 'N' or pac == 'n':
-                        smp = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        sps = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
-                        break
-                    else:
-                        print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                        print("_________________________________________________________")
-                        continue
-                except:
-                    print("[!!Error]"+" Aye captain account the victim is private or not ? ")
-                    print("_________________________________________________________")
-                    continue
-            break
-        else:
-            print("[Error!!]"+" Please enter number from the table")
-            print("_________________________________________________________")
-    except:
-        # I know that bad to your sweet eyes ^-^
-        print("[Error!!]"+" Please enter number from the table")
-    print("_________________________________________________________")
-
-lghe = """
 
 
+# Related to programmers . . No script kids
+# Here u should set the dangerous inputs, it was deleted to avoid world law.
 
-
-
-       /_/_  __       _   _  _  /
-      / //_'//_' |/|//_' /_//_/. 
-                         _/       
-"""
-print(colored(lghe, 'cyan'))
-while True:
-    try:
-        number = int(input("   [?]How many number of spam --> "))
-        if number > 100000:
-            print("[!!Error]"+" The largest of spam equal 100000")
-            print("_________________________________________________________")
-            continue
-        elif number <= 0:
-            print("[!!Error]"+" The number of spam must be bigger than 0")
-            print("_________________________________________________________")
-            continue
-        else:
-            break
-    except:
-        print("[!!Error]"+" Enter only numbers")
-        print("_________________________________________________________")
-        continue
-
-hlp = '''
-
-
-
-
-
-{ [!]Enter the number of sleep depend on your internet speed and computer speed to avoid errors }
-- between (1 - 5)          >5 lowest speed   -   >1 Highest speed
-'''
-while True:
-    try:
-        print((hlp))
-        ss = eval(input("   [ ZzzSLEEP ] --> "))
-
-        if ss > 5:
-            print("[!!Error]"+" Enter <=5")
-            print("_________________________________________________________")
-            continue
-        elif ss < 1:
-            print("[!!Error]"+" Enter >=1")
-            print("_________________________________________________________")
-            continue
-        else:
-            break
-    except:
-        print(colored("[!!Error]", 'red'), colored("Enter only numbers"))
-        print("_________________________________________________________")
-        continue
 
 DN = """
 
@@ -467,10 +242,8 @@ class InstaScript:
 
             break
         browser.close()
-        print("               ______________________________________")
-        print("               | THE NUMBER OF SUCCESS SPAM IS-->"+ str(sum(LSSUCSPAM))+"  |")
-        print(colored("               ______________________________________", 'red'))
-        print("               | THE NUMBER OF FAIL SPAM IS-->"+ str(sum(LSFILSPAM))+"     |")
+        print(" | THE NUMBER OF SUCCESS SPAM IS--> "+ str(sum(LSSUCSPAM))+"  |")
+        print(" | THE NUMBER OF FAIL SPAM IS--> "+ str(sum(LSFILSPAM))+"     |")
         print("\n")
         print("  //Press Enter")
         ex = input(">[EXIT] ")
